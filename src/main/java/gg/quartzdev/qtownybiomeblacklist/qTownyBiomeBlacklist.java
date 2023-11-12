@@ -1,6 +1,7 @@
 package gg.quartzdev.qtownybiomeblacklist;
 
 import gg.quartzdev.qtownybiomeblacklist.listeners.TownyClaimListener;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.block.Biome;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -28,6 +29,11 @@ public final class qTownyBiomeBlacklist extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        int pluginId = 20273; // <-- Replace with the id of your plugin!
+        Metrics metrics = new Metrics(this, pluginId);
+
+
         biomeBlacklist = loadBiomeBlacklist();
         DENY_MESSAGE = getConfig().getString("deny-msg", "You're not allowed to claim land in <biome>");
         getServer().getPluginManager().registerEvents(new TownyClaimListener(), instance);
