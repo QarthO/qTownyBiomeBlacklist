@@ -1,5 +1,0 @@
-name: qTownyBiomeBlacklist
-version: '1.0-SNAPSHOT'
-main: gg.quartzdev.qtownybiomeblacklist.qTownyBiomeBlacklist
-depend: [Towny]
-api-version: '1.20'
