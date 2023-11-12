@@ -1,0 +1,86 @@
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                   qTownyBiomeBlacklist Config                   | #
+# |   Source:   https://github.com/QarthO/qTownyBiomeBlacklist      | #
+# |   Download: https://modrinth.com/plugin/qTownyBiomeBlacklist/   | #
+# |   Donate:   https://paypal.me/qartho                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# The message that's sent to the player after attempting to claim in a blacklisted biome
+# - Uses towny to send the message, so its already has the [Towny] prefix
+deny-message: "You're not allowed to claim land in <biome>"
+
+# if set to true, blacklisted-biomes will be treated as a whitelist, and you'll only be able
+# to claim in those biomes
+# ====== NOT YET IMPLEMENTED ======
+# inverted: false
+
+# Biome list can be found here: https://jd.papermc.io/paper/1.20/org/bukkit/block/Biome.html
+# Just un/comment out the biomes you'd want to blacklist
+blacklisted-biomes:
+#  - BADLANDS
+#  - BAMBOO_JUNGLE
+#  - BASALT_DELTAS
+#  - BEACH
+#  - BIRCH_FOREST
+#  - CHERRY_GROVE
+  - COLD_OCEAN
+#  - CRIMSON_FOREST
+#  - CUSTOM
+#  - DARK_FOREST
+  - DEEP_COLD_OCEAN
+#  - DEEP_DARK
+  - DEEP_FROZEN_OCEAN
+  - DEEP_LUKEWARM_OCEAN
+  - DEEP_OCEAN
+#  - DESERT
+#  - DRIPSTONE_CAVES
+#  - END_BARRENS
+#  - END_HIGHLANDS
+#  - END_MIDLANDS
+#  - ERODED_BADLANDS
+#  - FLOWER_FOREST
+#  - FOREST
+  - FROZEN_OCEAN
+#  - FROZEN_PEAKS
+#  - FROZEN_RIVER
+#  - GROVE
+#  - ICE_SPIKES
+#  - JAGGED_PEAKS
+#  - JUNGLE
+  - LUKEWARM_OCEAN
+#  - LUSH_CAVES
+#  - MANGROVE_SWAMP
+#  - MEADOW
+#  - MUSHROOM_FIELDS
+#  - NETHER_WASTES
+  - OCEAN
+#  - OLD_GROWTH_BIRCH_FOREST
+#  - OLD_GROWTH_PINE_TAIGA
+#  - OLD_GROWTH_SPRUCE_TAIGA
+#  - PLAINS
+#  - RIVER
+#  - SAVANNA
+#  - SAVANNA_PLATEAU
+#  - SMALL_END_ISLANDS
+#  - SNOWY_BEACH
+#  - SNOWY_PLAINS
+#  - SNOWY_SLOPES
+#  - SNOWY_TAIGA
+#  - SOUL_SAND_VALLEY
+#  - SPARSE_JUNGLE
+#  - STONY_PEAKS
+#  - STONY_SHORE
+#  - SUNFLOWER_PLAINS
+#  - SWAMP
+#  - TAIGA
+#  - THE_END
+#  - THE_VOID
+  - WARM_OCEAN
+#  - WARPED_FOREST
+#  - WINDSWEPT_FOREST
+#  - WINDSWEPT_GRAVELLY_HILLS
+#  - WINDSWEPT_HILLS
+#  - WINDSWEPT_SAVANNA
+#  - WOODED_BADLANDS
