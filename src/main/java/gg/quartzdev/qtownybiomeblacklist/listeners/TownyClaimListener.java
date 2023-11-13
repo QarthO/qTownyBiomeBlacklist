@@ -1,5 +1,6 @@
 package gg.quartzdev.qtownybiomeblacklist.listeners;
 
+import com.palmergames.bukkit.towny.TownySettings;
 import com.palmergames.bukkit.towny.event.TownPreClaimEvent;
 import com.palmergames.bukkit.towny.object.Coord;
 import com.palmergames.bukkit.towny.object.TownBlock;
@@ -29,6 +30,13 @@ public class TownyClaimListener implements Listener {
 
     @EventHandler(priority  = EventPriority.HIGHEST)
     public void onTownyClaim(TownPreClaimEvent event){
+
+//        plugin should already be disabled, but just incase they changed townblocksize while server is running
+        if(TownySettings.getTownBlockSize() != 16){
+            plugin.getLogger().severe("This plugin currently only supports TownBlock Sizes of 16. Keeping bugging @QarthO on discord until he adds support.");
+            Bukkit.getServer().getPluginManager().disablePlugin(plugin);
+            return;
+        }
 
 //        gets the TownBlock
         TownBlock townBlock = event.getTownBlock();
