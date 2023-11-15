@@ -36,7 +36,6 @@ public final class qTownyBiomeBlacklist extends JavaPlugin {
         int pluginId = 20273;
         Metrics metrics = new Metrics(this, pluginId);
 
-        getLogger().info("getTownBlockSize: " + TownySettings.getTownBlockSize());
         if(TownySettings.getTownBlockSize() != 16){
             getLogger().severe("This plugin currently only supports TownBlock Sizes of 16. Keeping bugging @QarthO on discord until he adds support.");
             Bukkit.getServer().getPluginManager().disablePlugin(this);

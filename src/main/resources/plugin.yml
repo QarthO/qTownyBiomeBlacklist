@@ -1,5 +1,8 @@
 name: qTownyBiomeBlacklist
 version: '${project.version}'
 main: gg.quartzdev.qtownybiomeblacklist.qTownyBiomeBlacklist
+description: A TownyAdvanced addon where you can blacklist claiming in specific biomes
+author: QarthO
+website: https://www.quartzdev.gg/discord/
 depend: [Towny]
 api-version: '1.20'
